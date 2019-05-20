@@ -1,0 +1,287 @@
+* { 
+    box-sizing:border-box; 
+}
+
+section.banner {
+    display: none;
+}
+
+body {
+    background-image: url("images/bg-body.png");
+    font-family: sans-serif;
+}
+
+img.logo {
+    display: block;
+    width: 200px;
+    border-radius: 50%;
+    border: gray 2px solid;
+    margin: 0 auto;
+    margin-top:35px;
+}
+
+
+header a span.fa {
+    background-color: gray;
+    font-size: 50px;
+    padding: 20px;
+    color: white;
+    margin: 0 auto;
+    width: 84px;
+    display: block;
+    margin-top:15px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header {
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    display: none;
+    list-style-type: none;
+    padding-left: 0%;
+}
+
+header nav ul li {
+    background-color: gray;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration:none;
+}
+
+
+header nav:hover ul {
+    display: blocK;
+}
+
+img.photo {
+    width: 100%;
+}
+
+img.special {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+div.photo-container {
+    position: relative;
+}
+
+a.zoom {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+}
+
+article.product p {
+    color: gray;
+}
+
+a.more {
+    color: white;
+    text-decoration: none;
+    background-color: gray;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+article.product {
+    margin-bottom: 20px;
+}
+
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0%;
+    text-transform: capitalize;
+}
+
+footer ul li {
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+
+    header nav a.toggle-nav {
+        display: none;
+    }
+
+    header nav ul {
+        display: block;
+        overflow: hidden;
+    }
+
+    header nav ul li {
+        float:left;
+        width: 15%;
+        margin-right: 2%;
+    }
+
+    header nav ul li a {
+        font-size: 10px;
+    }
+
+    header nav ul li:last-child {
+        margin-right: 0;
+    }
+
+    section.banner {
+        display: block;
+    }
+
+    section.banner img {
+        width: 100%;
+        margin-bottom: 10px;
+
+    }
+
+    article.product {
+        float: left;
+        width: 45%;
+        margin-right: 10%;
+
+    }
+
+    article.product:nth-child(2n){
+        margin-right: 0;
+    }
+
+    section.vip-products {
+        overflow: hidden;
+    }
+
+    footer ul li {
+        background-color: red;
+        margin-bottom: 2px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    footer ul li:last-child {
+        border-right: 0;
+    }
+  }
+
+
+
+@media only screen and (min-width: 768px) {
+
+    header nav a.toggle-nav {
+        display: none;
+    }
+
+    header nav ul {
+        display: block;
+        overflow: hidden;
+    }
+
+    header nav ul li {
+        float:left;
+        width: 12.5%;
+        margin-right: 5%
+    }
+
+    header nav ul li:last-child {
+        margin-right: 0;
+    }
+
+    section.banner {
+        display: block;
+    }
+
+    section.banner img {
+        width: 100%;
+        margin-bottom: 10px;
+
+    }
+
+    article.product {
+        float: left;
+        width: 30%;
+        margin-right: 5%;
+
+    }
+
+    article.product:nth-child(3n){
+        margin-right: 0;
+    }
+
+    section.vip-products {
+        overflow: hidden;
+    }
+
+    footer ul {
+       display: flex;
+       justify-content: center;
+       background-color: red;
+       border-top-left-radius: 10px;
+       border-top-right-radius: 10px;
+       padding-top: 35px;
+       padding-bottom: 35px;
+    }
+    
+    footer ul li {
+         border-right: 1px solid white;
+         text-transform: capitalize;           
+    }
+    
+    footer ul li:last-child {
+        border-right: 0;
+    }
+  }
+
+
+/***
+
+flexbox
+
+article.product {
+    width: 30%;
+
+section.vip-products {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+--------------------------
+div.photo-container {
+    position: relative;
+}
+
+section.vip-products article {
+    width:100%;
+}
+
+section.vip-products .photo {
+    width:100%;
+}
+
+*/
